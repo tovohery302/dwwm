@@ -248,4 +248,14 @@ body {
     }
 }
 
+@media screen and (max-width: 640px) {
+        body {
+            background-image: none;
+            background-color: #f72;
+        }
 
+        #cast img {
+            display: none;
+        }
+
+}
