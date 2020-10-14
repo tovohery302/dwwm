@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <main id="wrapper">
+
+        <h1>Formulaire de candidature</h1>
+        <form action="save.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Contact</legend>
+                <div><label for="fname">Prénom :</label>
+                <input type="text" name="fname" id="fname" placeholder="Prénom usuel" pattern="[a-zA-Zéèêë\- ]{2,30}" required>
+            </div>  
+            <div><label for="dob">Date de naissance</label><input type="date" name="dob" id="dob"></div>
+
+            <div><label for="mail">Adresse Email</label><input type="email" name="mail" id="mail"></div>
+            <div><label for="site">Site Web Perso</label><input type="url" name="site" id="site"></div>
+            <div><label for="phone">Telephone</label><input type="tel" name="" id="phone"></div>
+            <div><label for="region">Région</label><select name="region" id="region">
+                <optgroup label="Ouest"><option value="B2">Bretagne</option>
+                <option value="NM">Normandie</option></optgroup>
+                <optgroup label="Nord"><option value="PC">Pas-de-Calais</option>
+                <option value="PI">Picardie</option></optgroup>
+                <optgroup label="Est"><option value="AL">Alsace</option>
+                <option value="LO"></option></optgroup>
+                <optgroup label="Sud"><option value="CA">PACA</option>
+                <option value="OC">Occitanie</option></optgroup>
+                <optgroup label="Centre"><option value="IF">Ile de France</option></optgroup>
+            </select></div>
+            <fieldset>
+                <legend>Genre</legend>
+                <div><input type="radio" name="gender" id="genFem" value="Féminin" checked><label for="genFem">Féminin</label></div>
+                <div><input type="radio" name="gender" id="genMas" value="Masculin" ><label for="genMas">Masculin</label></div>
+                <div><input type="radio" name="gender" id="genNeu" value="Neutre" ><label for="genNeu">Neutre</label></div>
+                </div>
+            </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Compétences</legend>
+                    <div><label for="exp">Expérience</label><input type="number" name="exp" id="exp" min="1" max="35" step="1"></div>
+                    <div><label for="lang">Langage principal :</label><input type="text" id="lang" name="lang" list="langList">
+                    <datalist id="langList">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="PERL">
+                        <option value="BASIC">
+                        <option value="COBOL">
+                        <option value="C++">  
+                        <option value="Javascript">
+                        <option value="PHP">
+                        <option value="HTML/CSS">            
+                    </datalist></div>
+                    <div><label for="area">Mobilité : </label><select name="area[]" id="area" size="4" multiple>
+                        <option value="EU">Europe</option>
+                        <option value="AS">Asie</option>
+                        <option value="AM">Amérique</option>
+                        <option value="AF">Afrique</option>
+                        <option value="OC">Océanie</option>
+                    </select></div>
+
+                    <div>
+                        <label for="cv">Curriculum Vitae</label> 
+                        <input type="file" name="cv" id="cv" accept="pdf,doc,docx,odt,txt"><input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+                    </div>
+                    <div><label for="test">test de couleur</label><input type="color" name="test" id="test" title="C'est un test de personnalité ua travers d'un choix de couleur"></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Prétentions salariales</legend>
+                <div><label for="salary">Salaire ...</label><input type="range" name="salary" id="salary" min="2500" max="8000" step="100" value="3200" onchange="document.getElementById('salVal').textContent=this.value"><output id="salVal">.</output></div>
+            </fieldset>
+            <fieldset>
+                <legend>Statut souhaité</legend>
+                <div><input type="checkbox" name="status[]" id="sta_jr" value="Dev-jr"><label for="stat_jr"> Développeur Junior</label></div>
+                <div><input type="checkbox" name="status[]" id="sta_sr" value="Dev-sr"><label for="stat_sr"> Développeur Senior</label></div>
+                <div><input type="checkbox" name="status[]" id="sta_cp" value="Chef-Prj"><label for="stat_cp"> Chef de projets</label></div>
+                <div><input type="checkbox" name="status[]" id="sta_si" value="Dir-si"><label for="stat_si"> Directeur SI</label></div>
+            </fieldset>
+            <div><label for="rem">Remarques : </label><textarea name="rem" id="rem" cols="30" rows="10"></textarea></div>
+
+            <input type="submit" value="Sauvegarder"><input type="reset" value="Effacer"><input type="image" src="" alt="sold out">
+        </form>  
+    </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+URL ?Querystring
+
+URL : Uniform Resource Locator
+==============================
+https:// -> protocol
+www.fnac.com -> domain
+/SearchResult/ ->path
+ResultList.aspx -> document
+#toto -> hash
+
+Querystring
+===========
+?
+SCat=0%211
+&
+Search=fables+de+la+fontaine
+&
+sft=1
+&
+sa=1
+
+http://docshare03.docshare.tips/files/25359/253596090.pdf 

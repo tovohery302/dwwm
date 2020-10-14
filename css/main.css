@@ -1,0 +1,251 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(../pics/fonds_index1.jpeg);
+    background-size: cover;
+   
+}
+
+#wrapper {
+    background-color: rgba(248, 246, 250, 0.863);
+    height: 100%;
+    opacity: 0.7;
+}
+
+
+#banner {
+    background: url(../pics/banner_index.jpg);
+    color: #fff;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    height: 7em;
+}
+#title{
+    height: 5rem;
+    line-height: 5rem;
+}
+
+#punchline {
+    height: 2rem;
+    line-height: 2rem;
+}
+
+#menu>ul {
+   list-style: none; 
+   padding: 0;
+   text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu a{
+    display: inline-block;
+    border: #00f solid .25rem;
+    margin: .5rem .25rem;
+    padding: .25rem;
+    background-color: #fff;
+    transition: all 1s linear;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    border: solid .25rem #fff;
+    color: #fff;
+    background-color: #00f;
+}
+
+#cast, #test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#team figure {
+    margin: .5rem;
+}
+
+#team figcaption {
+    text-align:center;
+}
+
+.rounded {
+    border-radius: 50%;
+    border: solid #fff .5rem;
+}
+
+#team>#titre1 {
+    
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+} 
+
+.project-banner {
+    text-align: center;
+    width: 30%;
+    border: solid #00f .15rem;
+    padding: 1em;
+    margin: 1em;
+    
+}
+/* .project-banner { */
+    /* display: flex; */
+    /* border: solid #000 .5rem;
+    background-color: skyblue; */
+    /* padding: 30px;
+    margin: 60 px; */
+/* } */ 
+
+
+.project-banner p{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
+.project-banner h2{
+     display: inline-block;
+     
+     border: solid #f00 .15rem;
+     margin: 0 auto;
+     /* padding: 0; */
+    font-size: 1rem;
+} 
+
+.project-banner {
+    position: relative;
+}
+
+.more {
+    background-color: #00f;
+    border: #00f outset .25rem;
+    padding: .20rem;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.15rem;
+}
+
+#warning {
+    background-color: #f00;
+    padding: .5rem;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ddd;
+    border: #999 outset .5rem;
+    padding: .25rem;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+.testart {
+    width: 30%;
+}
+
+.testart video {
+    width: 100%;
+}
+
+#footer {
+ background-color: #000;
+ color: #fff;
+   
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer>ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+#footer>ul>li {
+    margin: 1rem 0 ;
+    padding: 0 2rem;
+    border-right: #fff dotted .1rem;
+    /* border-left: #fff dotted .1rem; */
+}
+
+#footer>ul>li:last-child{
+    border-right: none;
+    /* border-left: none;   */
+}
+/* #footer>ul>li:first-child{
+    border-right: none;
+    border-left: none;  
+} */
+
+#register>form {
+    width:50%;
+    margin: 0 auto;
+}
+
+#register label {
+    width: 33%;
+    font-weight: bold;
+    text-align: right;
+}
+
+#register input {
+    width: 67%;
+
+}
+
+.rounded:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition: ease-in-out 2s;
+}
+
+#warning {
+    animation: clignotant 2s infinite;
+}
+
+@keyframes clignotant {
+    from {
+        background-color: #f00;
+        color: #fff;
+    }
+    25% {
+        background-color: #f50;
+        color: #fff;
+    }
+    50% {
+        background-color: #ff0;
+        color: #000;
+    }
+
+    75% {
+        background-color: #f50;
+        color: #fff;
+    }
+
+    to {
+        background-color: #f00;
+        color: #fff;
+    }
+}
+
+

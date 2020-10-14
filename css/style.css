@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: fixed left bottom url(../pics/london.jpg) repeat-x, fixed right top url(../pics/ironman.png) no-repeat;
+    /* background-position: bottom; */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Sansita Swashed', sans-serif;
+}
+#top {
+    text-shadow: 2px 3px 5px red, -2px -3px 5px orange;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: .25em;
+}
+
+h2 {
+ /* text-shadow: 2px 3px 5px cyan, -2px -3px 5px cyan; */
+ text-shadow: 0 0 5px cyan;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+
+figure:hover {
+    display: none;
+    visibility: hidden;
+}
+
+pre {
+    /* border: 32px black solid;
+    border-width: 32px 16px 8px 4px; */
+    border: black solid .1em;
+    width: 50%;
+    border-radius: 3em;
+    background-color: lavender;
+    background-image: url('../pics/back.png');
+    background-image: linear-gradient(yellow, orange, red);
+    background-image: radial-gradient(lime, green);
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+blockquote>span::before {
+    content: "\201C";
+}
+
+blockquote>span::after {
+    content: "\201D";
+}
+
+h1+main>p:first-child::first-line, h2+p::first-line {
+    font-style: italic;
+}
+
+h1+main>p:first-child::first-letter, h2+p::first-letter {
+    font-weight: bold; font-size: 1.5em; 
+}
+            
+p:hover {
+                background-color: #f4cca0;
+            }
+
+ul>li {
+    list-style-type: disc;
+    /* list-style-image: url(../pics/bullets200.xcf); */
+}
+
+table {
+    width: 75%;
+    border: .1em solid #000;
+}
+
+td, th{ 
+    border: .1em solid #000;
+} 
+
+thead {
+    color: #EEE;
+    background-color: #555;
+
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tbody td:last-child {
+    text-align: right;
+}
+
+tbody>tr {
+    transition: all 0.5s ease-in;
+
+}
+
+tbody>tr:hover {
+    background-color: #de2;
+    cursor: pointer;
+}
+
+tfoot {
+    background-color: #02f;
+    color: #ee5;
+    font-weight: bold;
+}
+
+table>caption {
+    color: #f30;
+    margin-bottom: .5em;
+}
+
